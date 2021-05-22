@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import{useState} from 'react';
+import PostList from './componets/PostList';
 
 function App(){
     const[searchTerm,setSearchTerm] = useState('')
@@ -12,7 +13,7 @@ function App(){
              onChange={(event)=> {setSearchTerm(event.target.value);
             }} />
 
-
+            <PostList/>
 
         </div>
 
